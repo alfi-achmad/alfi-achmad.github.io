@@ -1,0 +1,150 @@
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header {
+    text-align: center;
+    background-color: #000000;
+    opacity: .8;
+}
+
+.badge-base.LI-profile-badge{
+    min-width: 250px;
+    margin: auto;
+    width: 25%;
+}
+
+.header h2 {
+    color: azure;
+}
+
+/* leftbar */
+
+.leftbar {
+    min-height: 300px;
+
+    /* background: linear-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.4) 80%); */
+}
+
+.weblink {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 6rem);
+    grid-gap: 4rem;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.weblink>li {
+    height: 5rem;
+    position: relative;
+    background-size: cover;
+    border-radius: 1rem;
+    list-style-type: none;
+    /* box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease-out; */
+}
+
+.weblink>li:hover {
+    transform: scale(1.02);
+}
+
+.weblink img {
+    /* width: 25%;
+    max-width: 25%; */
+    border-radius: 50%;
+}
+
+.weblink p {
+    margin-top: unset;
+    text-align: center;
+}
+
+/* rightbar */
+
+.potrait img {
+    width: 100%;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+
+
+
+
+
+
+/* responsiveweb */
+
+/*untuk layar device berukuran kecil*/
+@media screen and (min-width: 450px) {
+    .container {
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .leftbar {
+        width: 100%;
+    }
+
+    .rightbar {
+        width: unset;
+        visibility: hidden;
+    }
+}
+
+/*untuk layar device berukuran sedang*/
+@media screen and (min-width: 600px) {
+    .container {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .leftbar {
+        float: unset;
+        width: 100%;
+    }
+
+    .rightbar {
+        float: unset;
+        width: 100%;
+        visibility: visible;
+    }
+
+    .potrait img {
+        max-width: 50%;
+    }
+}
+
+/*untuk layar device berukuran besar*/
+@media screen and (min-width: 900px) {
+    .container {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .leftbar {
+        float: left;
+        width: 65%;
+    }
+
+    .rightbar {
+        float: right;
+        width: 30%;
+        visibility: visible;
+    }
+
+    .potrait img {
+        max-width: 100%;
+    }
+}
+
+/*#endregion*/
